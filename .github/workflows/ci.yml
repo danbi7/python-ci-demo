@@ -1,12 +1,15 @@
 name: Python CI Pipeline
+
 on:
   push:
     branches: [ main ]
   pull_request:
     branches: [ main ]
-  jobs:
-    build:
+
+jobs:
+  build:
     runs-on: ubuntu-latest
+    
   steps:
     - name: Checkout code
       uses: actions/checkout@v3
